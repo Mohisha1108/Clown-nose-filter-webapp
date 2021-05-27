@@ -1,0 +1,21 @@
+h1{
+    font-size: 25px !important;
+    pointer-events: none;
+}
+.snap_btn:hover{
+    background-color: red;
+}
+canvas{
+    border: 2px dashed black;
+    animation: changeColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes changeColor{
+    from{
+        box-shadow: 5px 5px 18px, 2px 5px 90px blue ;
+    }
+    to{
+        box-shadow: 5px 5px 18px, 2px 5px 90px red;
+    }
+}
